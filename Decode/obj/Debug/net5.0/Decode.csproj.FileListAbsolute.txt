@@ -1,0 +1,16 @@
+J:\Code\pscad\DbproAlgro\Decode\bin\Debug\net5.0\Decode.exe
+J:\Code\pscad\DbproAlgro\Decode\bin\Debug\net5.0\Decode.deps.json
+J:\Code\pscad\DbproAlgro\Decode\bin\Debug\net5.0\Decode.runtimeconfig.json
+J:\Code\pscad\DbproAlgro\Decode\bin\Debug\net5.0\Decode.runtimeconfig.dev.json
+J:\Code\pscad\DbproAlgro\Decode\bin\Debug\net5.0\Decode.dll
+J:\Code\pscad\DbproAlgro\Decode\bin\Debug\net5.0\ref\Decode.dll
+J:\Code\pscad\DbproAlgro\Decode\bin\Debug\net5.0\Decode.pdb
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\Decode.csproj.AssemblyReference.cache
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\Decode.GeneratedMSBuildEditorConfig.editorconfig
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\Decode.AssemblyInfoInputs.cache
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\Decode.AssemblyInfo.cs
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\Decode.csproj.CoreCompileInputs.cache
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\Decode.dll
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\ref\Decode.dll
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\Decode.pdb
+J:\Code\pscad\DbproAlgro\Decode\obj\Debug\net5.0\Decode.genruntimeconfig.cache
