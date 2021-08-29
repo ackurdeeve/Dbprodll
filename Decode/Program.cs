@@ -19,7 +19,7 @@ namespace Decode
 
             var authcode_byte = ConvertAuthcodeToChars(authcode);
             var requestcode_byte = ConvertAuthcodeToChars(requestcode);
-            var requestverify = DecodeAuthCode(requestcode, 16);
+            var requestcode_ending = DecodeAuthCode(requestcode, 16); //获取机器码后8位,倒过来 D9C9506090F6A409087D3DCAAD2163B22E9701D7
 
             var authverify = DecodeAuthCode(authcode, 128); //0x25349477
             var verifycode  = GetVerifyCode(authcode);
@@ -31,6 +31,7 @@ namespace Decode
             
             var gigaauthverify = DecodeAuthCode(gigabyte, 128);
             var gigaverifycode  = GetVerifyCode(gigabyte);
+
             var outbuffer = new uint[128]; //0000000000AFCBF0
             
             for (int i = 0; i < 8; i++)
@@ -45,6 +46,22 @@ namespace Decode
                 authcode = authcode.PadLeft(32).Remove(0, 32);
                 Console.WriteLine("{0:X4}",result);
             }
+            
+            var outbuffer1 = new uint[128];
+            
+            for (int i = 0; i < 8; i++)
+            {
+                var updateAuth = new uint[15];
+                var result = VerifyAuthCode(gigabyte,out updateAuth);
+                var index = i *16;
+                for (int j = 0; j < 16; j++)
+                {
+                    outbuffer1[j+index] = updateAuth[j];
+                }
+                authcode = authcode.PadLeft(32).Remove(0, 32);
+                Console.WriteLine("{0:X4}",result);
+            }
+            
             
             Console.WriteLine(authcode.Length);
         }
@@ -88,7 +105,7 @@ namespace Decode
             return ~v2;
         }
 
-        //计算正确注册码 a1 authcode_byte; a3 verifytable; a2 需要修改的authocodebyte
+        // a1 authcode_byte; a3 verifytable; a2 需要修改的authocodebyte
         //uint a1, uint a2, ulong a3,  not used
         //rcx,rdx,r8 
         //r8 authcode rcx = rdx 均为注册码的首地址
