@@ -17,6 +17,8 @@ you must see "Safenet USB Superpro/Ultrapro" like content in USB device list.
 
 Do not need to see the donglebackuppro.exe, it is just a UI to communicate with the background functions coded in dbpro.dll.
 
+1. Request generate code 
+
 ```c#
  string requestcode = "D9C9506090F6A409087D3DCAAD2163B2";  // computer based label
  var requestcode_ending = DecodeAuthCode(requestcode, 16);  // 2E9701D7
@@ -30,6 +32,7 @@ var authverify = DecodeAuthCode(authcode, 128); //0x25349477
 var verifycode  = GetVerifyCode(authcode); //0x25349477
 ```
 
+2. Verify code
 verifycode gets the last 8 bytes of the authocode. authverify verify the whole authcode from the beginning to the 128 byte to get a result.
 The result must be the same with the verifycode.
 
