@@ -36,6 +36,7 @@ verifycode gets the last 8 bytes of the authocode. authverify verify the whole a
 The result must be the same with the verifycode.
 
 3. Decode all authcode
+
 I do not know what authcode after 128 bytes are used for. But I see it is all decoded and save to outbuffer using the below code.
 
 ```c#
