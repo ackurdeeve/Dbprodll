@@ -57,6 +57,6 @@ for (int i = 0; i < 8; i++)
 
 I have also noticed that some of the decoded bytes are used in [DeviceIoControl api](https://docs.microsoft.com/en-us/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol).
 
-It is the communication mechanical between the driver and the software.
+It is the communication mechanical between the driver and the software. It needs some windows usb driver development to fully understand the code. 
 
-So still need more work to do. I can not garrant the work to be done. It is welcome that anyone can help.
+The work is not done. I can not garrant the work could be done. It is welcome that anyone can help.
